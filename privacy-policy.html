@@ -12,9 +12,9 @@
 
     body {
       margin: 0;
-      background: #fdf8f2;
-      color: #2c2c2c;
-      font-family: Georgia, serif;
+      background: #000042;
+      color: #f2c99d;
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 17px;
       line-height: 1.75;
     }
@@ -27,8 +27,7 @@
 
     .wordmark {
       margin: 0 0 18px;
-      color: #2c2c2c;
-      font-family: Georgia, serif;
+      color: #f2c99d;
       font-size: 2.4em;
       font-weight: 500;
       letter-spacing: 0.18em;
@@ -37,7 +36,7 @@
 
     .meta {
       margin-bottom: 36px;
-      color: #6b6258;
+      color: rgba(242, 201, 157, 0.72);
       font-size: 0.92em;
       letter-spacing: 0.04em;
       text-align: center;
@@ -46,14 +45,13 @@
     hr {
       margin: 0 0 48px;
       border: none;
-      border-top: 1px solid #e0d8cc;
+      border-top: 1px solid rgba(242, 201, 157, 0.28);
     }
 
     h2 {
       margin-top: 44px;
       margin-bottom: 16px;
-      color: #2c2c2c;
-      font-family: Georgia, serif;
+      color: #f2c99d;
       font-size: 1.25em;
       font-variant: small-caps;
       font-weight: 600;
@@ -74,25 +72,25 @@
     }
 
     a {
-      color: #4a3f35;
+      color: #f2c99d;
       text-decoration: underline;
     }
 
     a:hover {
-      color: #2c2c2c;
+      color: #ffffff;
     }
 
     footer {
       margin-top: 64px;
       padding-top: 24px;
-      border-top: 1px solid #e0d8cc;
-      color: #6b6258;
+      border-top: 1px solid rgba(242, 201, 157, 0.28);
+      color: rgba(242, 201, 157, 0.72);
       font-size: 0.88em;
       text-align: center;
     }
 
     footer a {
-      color: #6b6258;
+      color: rgba(242, 201, 157, 0.86);
     }
   </style>
 </head>
@@ -103,7 +101,8 @@
     <div class="wordmark">NEPSIS</div>
 
     <div class="meta">
-      Privacy Policy &nbsp;&middot;&nbsp; Effective Date: August 11, 2026
+      Privacy Policy &nbsp;&middot;&nbsp;
+      Effective Date: August 19, 2026
     </div>
 
     <hr>
@@ -118,31 +117,42 @@
     <h2>1. Information We Collect</h2>
 
     <p>
-      We collect only what is necessary to provide you with the Nepsis
-      experience:
+      We collect only the information reasonably necessary to provide and
+      maintain the Nepsis experience.
     </p>
 
     <ul>
       <li>
         <strong>Account information:</strong>
-        When you create an account, we collect your email address.
-        Authentication credentials are processed securely through Firebase
-        Authentication. Nepsis does not have access to your unencrypted
-        password.
+        When you create an account, we collect your email address and a
+        unique account identifier. Authentication credentials are processed
+        securely through Firebase Authentication. Nepsis does not have
+        access to your unencrypted password.
       </li>
 
       <li>
-        <strong>Usage data:</strong>
-        We may collect limited information about how you use the app, such
-        as which features are accessed, to maintain and improve the
-        experience.
+        <strong>Usage and technical information:</strong>
+        We may collect limited information about how the app is accessed
+        and used, such as features opened, app version, device platform,
+        technical errors, and general performance information. This
+        information may be used to operate, secure, troubleshoot, and
+        improve Nepsis.
       </li>
 
       <li>
         <strong>Purchase information:</strong>
         If you purchase access to Nepsis, payment is processed by Google
-        Play or the Apple App Store. We do not collect or store your full
+        Play or the Apple App Store. We may receive limited transaction and
+        entitlement information necessary to confirm your purchase and
+        provide access. We do not collect or store your complete
         payment-card or banking information.
+      </li>
+
+      <li>
+        <strong>Communications:</strong>
+        If you contact us for support, we may collect your email address,
+        the contents of your message, and any information you voluntarily
+        provide so that we can respond.
       </li>
     </ul>
 
@@ -150,35 +160,54 @@
 
     <ul>
       <li>We do not collect your precise location.</li>
-      <li>We do not collect health or biometric data.</li>
-      <li>We do not sell your personal information to third parties.</li>
-      <li>We do not use your personal information for advertising purposes.</li>
+      <li>We do not collect health, biometric, or medical information.</li>
+      <li>We do not record or listen to you through your microphone.</li>
+      <li>We do not access your camera, contacts, or personal media.</li>
+      <li>We do not sell your personal information.</li>
+      <li>We do not use your personal information for targeted advertising.</li>
     </ul>
 
     <h2>3. How We Use Your Information</h2>
 
-    <p>We use the information we collect to:</p>
+    <p>We may use the information described above to:</p>
 
     <ul>
       <li>Create, authenticate, and manage your Nepsis account.</li>
-      <li>Provide access to content based on your purchase status.</li>
-      <li>Respond to support requests.</li>
-      <li>Maintain, secure, and improve the app experience.</li>
+      <li>Verify your purchase and provide access to app content.</li>
+      <li>Restore previously purchased access.</li>
+      <li>Deliver streamed images, videos, and written experiences.</li>
+      <li>Respond to support requests and communications.</li>
+      <li>Maintain, troubleshoot, secure, and improve the app.</li>
       <li>Prevent fraud, misuse, and unauthorized access.</li>
+      <li>Comply with applicable legal obligations.</li>
     </ul>
 
-    <h2>4. Data Storage and Security</h2>
+    <h2>4. Legal Bases for Processing</h2>
 
     <p>
-      Your information is stored using Google Firebase, which provides
-      industry-standard security controls. We take reasonable
-      administrative and technical measures to protect your information
-      from unauthorized access, alteration, loss, misuse, or disclosure.
-      However, no electronic storage or transmission system can be
-      guaranteed to be completely secure.
+      Depending on where you live, we may process your personal information
+      because it is necessary to provide the service you requested, because
+      we have a legitimate interest in operating and securing Nepsis,
+      because you have provided consent, or because processing is necessary
+      to comply with applicable law.
     </p>
 
-    <h2>5. Data Retention and Deletion</h2>
+    <h2>5. Data Storage and Security</h2>
+
+    <p>
+      Account and app information may be stored and processed using Google
+      Firebase and other service providers that support the operation of
+      Nepsis.
+    </p>
+
+    <p>
+      We use reasonable administrative and technical safeguards designed to
+      protect personal information from unauthorized access, alteration,
+      loss, misuse, or disclosure. However, no method of electronic storage
+      or transmission can be guaranteed to be completely secure.
+    </p>
+
+    <h2>6. Data Retention and Deletion</h2>
 
     <p>
       We retain your account information, including your email address and
@@ -188,91 +217,200 @@
 
     <p>
       You may request deletion of your account and associated personal data
-      by using the Delete Account option available in the app or by
+      by using the Delete Account option available within the app or by
       contacting us at
-      <a href="mailto:hellonepsis@gmail.com">hellonepsis@gmail.com</a>.
+      <a href="mailto:hellonepsis@gmail.com">
+        hellonepsis@gmail.com
+      </a>.
     </p>
 
     <p>
       When an account-deletion request is received, the account and
-      associated personal data will be deleted within 30 days, unless
-      retention is required for legal, security, fraud-prevention, dispute
-      resolution, or regulatory purposes.
+      associated personal data will generally be deleted within 30 days,
+      unless retention is necessary for legal compliance, security,
+      fraud prevention, dispute resolution, or the protection of legal
+      rights.
     </p>
 
     <p>
       Residual copies may remain in secure system backups for up to 90 days
-      before being permanently removed. Information retained in backups is
-      not used for any other purpose during that period.
+      before being removed through normal backup-deletion processes.
+      Information retained in backups is not actively used during that
+      period.
     </p>
 
     <p>
       Anonymous or aggregated information that can no longer reasonably
-      identify an individual may be retained for analytics, security, and
-      service-improvement purposes.
+      identify you may be retained for security, analytics, troubleshooting,
+      and service-improvement purposes.
     </p>
 
-    <h2>6. Third-Party Services</h2>
+    <p>
+      Deleting your Nepsis account does not automatically delete transaction
+      records maintained independently by Apple, Google, or other payment
+      providers.
+    </p>
+
+    <h2>7. Third-Party Services</h2>
 
     <p>
-      Nepsis uses the following third-party services, each governed by its
-      own privacy policy:
+      Nepsis relies on third-party services to provide parts of the app.
+      These providers may process limited information according to their own
+      privacy policies.
     </p>
 
     <ul>
-      <li>Google Firebase — authentication, database, and data storage</li>
-      <li>Google Play and Apple App Store — purchases and payment processing</li>
-      <li>RevenueCat — purchase status and entitlement management</li>
+      <li>
+        <strong>Google Firebase:</strong>
+        Authentication, cloud database, file storage, and technical
+        infrastructure.
+      </li>
+
+      <li>
+        <strong>Apple App Store:</strong>
+        App distribution, purchase processing, and purchase records for
+        Apple users.
+      </li>
+
+      <li>
+        <strong>Google Play:</strong>
+        App distribution, purchase processing, and purchase records for
+        Android users.
+      </li>
+
+      <li>
+        <strong>RevenueCat:</strong>
+        Purchase verification, entitlement status, and purchase restoration.
+      </li>
     </ul>
 
-    <h2>7. Children's Privacy</h2>
-
     <p>
-      Nepsis is not directed at children under the age of 13. We do not
-      knowingly collect personal information from children under 13. If you
-      believe that a child has provided us with personal information,
-      please contact us and we will take appropriate steps to delete it.
+      Nepsis does not control the independent privacy practices of these
+      services. We encourage you to review their privacy policies for more
+      information.
     </p>
 
-    <h2>8. Your Rights and Choices</h2>
+    <h2>8. Data Sharing</h2>
 
-    <p>Depending on where you live, you may have the right to:</p>
+    <p>
+      We do not sell or rent your personal information. We may share limited
+      information only:
+    </p>
 
     <ul>
-      <li>Request access to the personal information we hold about you.</li>
+      <li>
+        With service providers that help us operate, secure, and deliver
+        Nepsis.
+      </li>
+
+      <li>
+        When necessary to verify purchases or restore access.
+      </li>
+
+      <li>
+        When required by law, legal process, or a valid government request.
+      </li>
+
+      <li>
+        When reasonably necessary to protect the security, rights, or safety
+        of Nepsis, its users, or others.
+      </li>
+
+      <li>
+        In connection with a business transfer, such as a merger,
+        acquisition, reorganization, or sale of assets, subject to
+        appropriate privacy protections.
+      </li>
+    </ul>
+
+    <h2>9. International Data Processing</h2>
+
+    <p>
+      Nepsis and its service providers may process or store information in
+      the United States or other countries. These locations may have data
+      protection laws that differ from those in your place of residence.
+      Where required, appropriate safeguards will be used for international
+      data transfers.
+    </p>
+
+    <h2>10. Children's Privacy</h2>
+
+    <p>
+      Nepsis is not directed to children under 13, and we do not knowingly
+      collect personal information from children under 13.
+    </p>
+
+    <p>
+      If you believe that a child under 13 has provided personal information
+      to Nepsis, please contact us. We will take reasonable steps to verify
+      the request and remove the information where required.
+    </p>
+
+    <h2>11. Your Rights and Choices</h2>
+
+    <p>
+      Depending on where you live, you may have the right to:
+    </p>
+
+    <ul>
+      <li>Request access to personal information we hold about you.</li>
       <li>Request correction of inaccurate personal information.</li>
-      <li>Request deletion of your account and associated personal data.</li>
+      <li>Request deletion of your personal information.</li>
+      <li>Request a copy of certain personal information.</li>
+      <li>Object to or restrict certain processing.</li>
       <li>Withdraw consent where processing is based on consent.</li>
+      <li>Submit a complaint to an applicable data protection authority.</li>
     </ul>
 
     <p>
-      To delete your account, use the Delete Account option in the app or
-      contact us at
-      <a href="mailto:hellonepsis@gmail.com">hellonepsis@gmail.com</a>.
+      To exercise an available privacy right, use the Delete Account option
+      in the app when applicable or contact us at
+      <a href="mailto:hellonepsis@gmail.com">
+        hellonepsis@gmail.com
+      </a>.
     </p>
-
-    <h2>9. Changes to This Policy</h2>
 
     <p>
-      We may update this Privacy Policy periodically. When changes are
-      made, we will update the effective date at the top of this page. We
-      encourage you to review this policy from time to time.
+      We may need to verify your identity before completing certain privacy
+      requests. We will not discriminate against you for exercising a
+      privacy right available under applicable law.
     </p>
 
-    <h2>10. Contact Us</h2>
+    <h2>12. Changes to This Policy</h2>
+
+    <p>
+      We may update this Privacy Policy when Nepsis features, technologies,
+      service providers, or legal obligations change. When changes are made,
+      we will update the effective date at the top of this page.
+    </p>
+
+    <p>
+      Where required by law, we will provide additional notice or request
+      consent before material changes take effect.
+    </p>
+
+    <h2>13. Contact Us</h2>
 
     <p>
       If you have questions, concerns, or requests relating to this Privacy
-      Policy or your personal information, please contact us at:<br>
-      <a href="mailto:hellonepsis@gmail.com">hellonepsis@gmail.com</a>
+      Policy or your personal information, please contact:
+      <br>
+
+      <a href="mailto:hellonepsis@gmail.com">
+        hellonepsis@gmail.com
+      </a>
     </p>
 
     <footer>
-      &copy; 2026 Nepsis &middot; Florida, United States<br>
+      &copy; 2026 Nepsis &middot; Florida, United States
+      <br>
+
       <a href="https://nepsis.space/terms-of-service.html">
         Terms of Service
       </a>
+
       &middot;
+
       <a href="https://nepsis.space/support.html">
         Support
       </a>
