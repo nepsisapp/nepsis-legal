@@ -5,168 +5,114 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nepsis — There is more than one way to be still.</title>
 <meta name="description" content="Nepsis is a minimalist meditation and breath app. Breathing, movement, focus, self-inquiry, and quiet reflection — a place to return when you need less noise.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-
 <link rel="icon" href="assets/bluetransparent.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="grain"></div>
-
-<header class="site-header">
-  <div class="header-inner">
-    <a href="#top" class="wordmark">NEPSIS</a>
-    <nav class="main-nav">
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">Menu</button>
-      <ul class="nav-list" id="navList">
-        <li><a href="#free-breath">Free Breath</a></li>
-        <li><a href="#experiences">Experiences</a></li>
-        <li><a href="#philosophy">About</a></li>
-        <li><a href="#purchase" class="nav-cta">Get Nepsis</a></li>
-      </ul>
-    </nav>
-  </div>
+<header class="header">
+  <div class="wordmark"><a href="#top">NEPSIS</a></div>
+  <nav class="nav">
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">Menu</button>
+    <div class="nav-list" id="navList">
+      <a href="#free-breath">Free Breath</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#philosophy">About</a>
+      <a href="#purchase" class="cta">Get Nepsis</a>
+    </div>
+  </nav>
 </header>
 
 <main id="top">
 
-  <!-- HERO -->
   <section class="hero">
     <p class="eyebrow">Meditation &amp; Breath</p>
-    <h1>There is more than one<br>way to be still.</h1>
-    <p class="hero-copy">Breathing. Movement. Focus. Self-inquiry. Quiet reflection.<br>
-    Nepsis gives you a place to return when you need less noise and more space.</p>
+    <h1>There is more than one way to be still.</h1>
+    <p class="copy">Breathing. Movement. Focus. Self-inquiry. Quiet reflection. Nepsis gives you a place to return when you need less noise and more space.</p>
   </section>
 
-  <!-- FREE BREATH -->
-  <section class="free-breath" id="free-breath">
-    <p class="eyebrow">Calm My Mind</p>
+  <section class="breath" id="free-breath">
     <h2>One quiet minute.</h2>
-
-    <div class="breath-stage">
-      <div class="breath-rings" id="breathRings">
-        <div class="ring ring-outer"></div>
-        <div class="ring ring-inner"></div>
-        <img src="assets/bluetransparent.png" alt="" class="breath-mark" id="breathMark">
-      </div>
-      <p class="breath-phase" id="breathPhase">Begin when you're ready</p>
-      <button class="breath-btn" id="breathBtn">Begin</button>
+    <div class="breath-visual" id="bv">
+      <div class="breath-mark"></div>
     </div>
-
+    <p class="breath-phase" id="bp">Begin when you're ready</p>
+    <button class="breath-btn" id="breathBtn">Begin</button>
     <p class="fine-print">Free to experience here. No account required.</p>
   </section>
 
-  <!-- EXPERIENCES -->
   <section class="experiences" id="experiences">
     <div class="experiences-intro">
       <h2>Explore Nepsis your way.</h2>
-      <p>Different moments need different kinds of stillness.<br>Choose what meets you where you are.</p>
+      <p>Different moments need different kinds of stillness. Choose what meets you where you are.</p>
     </div>
-
-    <div class="exp-row">
-      <div class="exp-media">
-        <img src="assets/moving%20stillness.jpg" alt="Moving Stillness — a figure with arms open gently at sunrise, breath guiding gentle movement" loading="lazy">
-      </div>
-      <div class="exp-copy">
+    <div class="grid-full">
+      <div class="card">
+        <div class="frame"><img src="assets/moving%20stillness.jpg" alt="Moving Stillness — a figure with arms open gently at sunrise, breath guiding gentle movement" loading="lazy"></div>
         <h3>Moving Stillness</h3>
-        <p>Let the breath lead the body, until gentle movement itself becomes a form of rest.</p>
+        <p>Gentle movement</p>
       </div>
-    </div>
-
-    <div class="exp-row reverse">
-      <div class="exp-media">
-        <img src="assets/open%20my%20focus.jpg" alt="Open My Focus — a single point of soft light held on a dark field" loading="lazy">
-      </div>
-      <div class="exp-copy">
+      <div class="card">
+        <div class="frame"><img src="assets/open%20my%20focus.jpg" alt="Open My Focus — a single point of soft light held on a dark field" loading="lazy"></div>
         <h3>Open My Focus</h3>
-        <p>A single point of light, held gently, until the mind grows quiet around it.</p>
+        <p>Visual awareness</p>
       </div>
-    </div>
-
-    <div class="exp-row">
-      <div class="exp-media">
-        <img src="assets/neti%20neti.jpg" alt="Neti Neti — self-inquiry screen inviting you to notice a thought without following it" loading="lazy">
-      </div>
-      <div class="exp-copy">
-        <h3>Neti Neti</h3>
-        <p>Notice the thought without becoming it. Ask what remains when it passes.</p>
-      </div>
-    </div>
-
-    <div class="exp-row reverse">
-      <div class="exp-media">
-        <img src="assets/quiet%20thought.jpg" alt="A Quiet Thought — a still lake at dusk with a reflective line of text" loading="lazy">
-      </div>
-      <div class="exp-copy">
+      <div class="card">
+        <div class="frame"><img src="assets/quiet%20thought.jpg" alt="A Quiet Thought — a still lake at dusk with a reflective line of text" loading="lazy"></div>
         <h3>A Quiet Thought</h3>
-        <p>One idea, offered slowly, for a mind that finally has room to sit with it.</p>
+        <p>Reflection</p>
       </div>
-    </div>
-
-  </section>
-
-  <!-- SET ME FREE — dark interlude -->
-  <section class="set-me-free" id="set-me-free">
-    <div class="smf-backdrop" style="background-image:url('assets/set%20me%20free%20rain.jpg');"></div>
-    <div class="smf-scrim"></div>
-    <div class="smf-content">
-      <p class="eyebrow eyebrow-light">Set Me Free</p>
-      <p class="smf-copy">An immersive nature experience. Choose an environment, and disappear into it for a moment.</p>
-      <div class="smf-frame">
-        <img src="assets/set%20me%20free.jpg" alt="Set Me Free — choose a place to disappear for a moment: a candlelit rainy window, a stream over stone, grasses at sunset">
+      <div class="card">
+        <div class="frame"><img src="assets/neti%20neti.jpg" alt="Neti Neti — self-inquiry screen inviting you to notice a thought without following it" loading="lazy"></div>
+        <h3>Neti Neti</h3>
+        <p>Self-inquiry</p>
+      </div>
+      <div class="card">
+        <div class="frame"><img src="assets/set%20me%20free.jpg" alt="Set Me Free — choose a place to disappear for a moment: a candlelit rainy window, a stream over stone, grasses at sunset" loading="lazy"></div>
+        <h3>Set Me Free</h3>
+        <p>Immersive nature</p>
       </div>
     </div>
   </section>
 
-  <!-- PHILOSOPHY -->
   <section class="philosophy" id="philosophy">
-    <p class="philosophy-lede">There is nothing to achieve here.</p>
-    <p>Nepsis was created around a simple idea:<br>stillness does not have to look one way.</p>
-    <p class="philosophy-stanza">
-      Sometimes it is found in the breath.<br>
-      Sometimes in movement.<br>
-      Sometimes in observing a thought without following it.<br>
-      Sometimes in simply disappearing into a quiet moment.
-    </p>
-    <p>There are no streaks to maintain, scores to improve,<br>or endless programs to complete.</p>
-    <p class="philosophy-close">
-      Open Nepsis when you need it.<br>
-      Take what you need.<br>
-      Leave when you're ready.
-    </p>
+    <div class="philosophy-inner">
+      <p class="lede">There is nothing to achieve here.</p>
+      <p>Nepsis was created around a simple idea: stillness does not have to look one way.</p>
+      <p class="stanza">
+        Sometimes it is found in the breath.<br>
+        Sometimes in movement.<br>
+        Sometimes in observing a thought without following it.<br>
+        Sometimes in simply disappearing into a quiet moment.
+      </p>
+      <p>There are no streaks to maintain, scores to improve, or endless programs to complete.</p>
+      <p class="close">
+        Open Nepsis when you need it.<br>
+        Take what you need.<br>
+        Leave when you're ready.
+      </p>
+    </div>
   </section>
 
-  <!-- PURCHASE -->
   <section class="purchase" id="purchase">
-    <div class="purchase-copy">
+    <div class="purchase-media"><img src="assets/main%20menu.jpg" alt="The Nepsis home screen — Daily Moment and a short, unhurried list of experiences" loading="lazy"></div>
+    <div>
       <p class="eyebrow">Get Nepsis</p>
       <p class="price">$9.99</p>
-      <p class="price-label">One-time unlock</p>
-      <p class="fine-print">No recurring subscription.</p>
+      <p class="price-label">One-time unlock &middot; No recurring subscription.</p>
       <div class="store-links">
         <a href="https://play.google.com/store" class="store-btn" id="googlePlayLink">Google Play</a>
         <a href="#" class="store-btn" id="appStoreLink">App Store</a>
       </div>
     </div>
-    <div class="purchase-media">
-      <img src="assets/main%20menu.jpg" alt="The Nepsis home screen — Daily Moment and a short, unhurried list of experiences" loading="lazy">
-    </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <a href="#top" class="wordmark small">NEPSIS</a>
-  <ul class="footer-links">
-    <li><a href="#">Privacy</a></li>
-    <li><a href="#">Terms</a></li>
-    <li><a href="#">Support</a></li>
-  </ul>
-  <p class="copyright">&copy; 2026 Nepsis</p>
+<footer class="footer">
+  <div class="wordmark small"><a href="#top">NEPSIS</a></div>
+  <div class="flinks"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Support</a></div>
+  <div class="copyright">&copy; 2026 Nepsis</div>
 </footer>
 
 <script src="script.js"></script>

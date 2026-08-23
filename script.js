@@ -1,7 +1,3 @@
-// ============================================================
-// NEPSIS — mobile nav + free breathing experience
-// ============================================================
-
 (function () {
   "use strict";
 
@@ -26,29 +22,28 @@
   }
 
   /* ---------- Breathing experience ---------- */
-  var rings = document.getElementById("breathRings");
-  var phaseLabel = document.getElementById("breathPhase");
+  var visual = document.getElementById("bv");
+  var phaseLabel = document.getElementById("bp");
   var btn = document.getElementById("breathBtn");
 
-  if (!rings || !phaseLabel || !btn) return;
+  if (!visual || !phaseLabel || !btn) return;
 
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // Each phase in milliseconds. Kept simple: inhale / hold / exhale.
   var PHASES = [
-    { name: "inhale", label: "Inhale", duration: 4000 },
-    { name: "hold", label: "Hold", duration: 4000 },
-    { name: "exhale", label: "Exhale", duration: 4000 }
+    { cls: "inhale", label: "Inhale", duration: 4000 },
+    { cls: "hold", label: "Hold", duration: 4000 },
+    { cls: "exhale", label: "Exhale", duration: 4000 }
   ];
 
   var running = false;
   var timeoutId = null;
   var cycleCount = 0;
-  var MAX_CYCLES = 4; // roughly "one quiet minute"
+  var MAX_CYCLES = 4;
 
   function clearPhaseClasses() {
     PHASES.forEach(function (p) {
-      rings.classList.remove(p.name);
+      visual.classList.remove(p.cls);
     });
   }
 
@@ -57,7 +52,7 @@
 
     var phase = PHASES[index];
     clearPhaseClasses();
-    rings.classList.add(phase.name);
+    visual.classList.add(phase.cls);
     phaseLabel.style.opacity = 0;
 
     window.setTimeout(function () {
@@ -102,8 +97,6 @@
 
   btn.addEventListener("click", function () {
     if (reducedMotion) {
-      // Still cycle the text for users who prefer reduced motion,
-      // just without relying on the animated rings for meaning.
       phaseLabel.textContent = running ? "Begin when you're ready" : "Inhale — Hold — Exhale";
       running = !running;
       btn.textContent = running ? "Pause" : "Begin";
